@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<div class="app"></div>
+
+<script type="module">
+  import Framework from "../framework.js"
+  import Component from "../component.js"
+  import Index from "./index_component.js"
+  let comp_generator = new Component.Component_generator(Index)
+  let el = document.querySelector('.app')
+  new Framework(comp_generator, el)
+</script>
+</body>
+</html>
